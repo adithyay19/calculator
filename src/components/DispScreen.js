@@ -1,13 +1,10 @@
 import React from "react";
 
-class DispScreen extends React.Component {
-    render() {
-        return(
-            <>
-                Display Screen
-            </>
-        )
-    }
+const DispScreen = (props) => {
+    return( 
+        <input type='text' id='result' value={props.text} readOnly/>
+    ) 
 }
+
 
 export default DispScreen;

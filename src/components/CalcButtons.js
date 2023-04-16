@@ -1,13 +1,11 @@
 import React from "react";
 
-class CalcButtons extends React.Component {
-    render() {
-        return(
-            <>
-                CalcButton
-            </>
-        )
-    }
+const CalcButtons = (props) => {
+
+
+    return(
+        <button>{props.char}</button>
+    )
 }
 
 export default CalcButtons;

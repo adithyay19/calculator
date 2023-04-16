@@ -2,51 +2,68 @@ import React from 'react';
 import './App.css';
 // import DispScreen from './components/DispScreen';
 // import CalcButtons from './components/CalcButtons';
-import { Button, Container, Input } from '@mui/material';
+import { Button } from '@mui/material';
+import DispScreen from './components/DispScreen';
+import CalcButtons from './components/CalcButtons';
 // import { grey } from '@mui/material/colors';
 // import Table from '@mui/material';
 
 
+
+// const num = document.getElementById('result');
+
 class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      dispText: "TEXT"
+    }
+    this.display = this.display.bind(this);
+  }
+
+  display(char) {
+    console.log(char);
+    this.setState({
+      dispText: char
+    })
+  }
+
   render() {
     return(
       <div className='container'>
-        {/* <DispScreen/> */}
-        {/* <br></br> */}
-        {/* <CalcButtons/> */}
-        
         <table className='table'>
           <tr>
             <td colSpan={3}>
-              <input/>
+              <DispScreen text={this.state.dispText}/>
             </td>
             <td>
             <Button variant='contained'>=</Button>
             </td>
           </tr>
           <tr>
-            <td><Button variant='contained'>7</Button></td>
-            <td><Button variant='contained'>8</Button></td>
-            <td><Button variant='contained'>9</Button></td>
-            <td><Button variant='contained'>/</Button></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
           </tr>
           <tr>
-            <td><Button variant='contained'>4</Button></td>
-            <td><Button variant='contained'>5</Button></td>
-            <td><Button variant='contained'>6</Button></td>
-            <td><Button variant='contained'>*</Button></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
           </tr>
           <tr>
-            <td><Button variant='contained'>1</Button></td>
-            <td><Button variant='contained'>2</Button></td>
-            <td><Button variant='contained'>3</Button></td>
-            <td><Button variant='contained'>-</Button></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
           </tr>
           <tr>
-            <td><Button variant='contained'>DEL</Button></td>
-            <td><Button variant='contained'>CLR</Button></td>
-            <td><Button variant='contained'>0</Button></td>
-            <td><Button variant='contained'>+</Button></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='7'/></td>
           </tr>
         </table>
       </div>
