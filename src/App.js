@@ -38,32 +38,32 @@ class App extends React.Component {
               <DispScreen text={this.state.dispText}/>
             </td>
             <td>
-            <Button variant='contained'>=</Button>
+            <CalcButtons char='='/>
             </td>
           </tr>
           <tr>
             <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='8'/></td>
+            <td><CalcButtons char='9'/></td>
+            <td><CalcButtons char='/'/></td>
           </tr>
           <tr>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='4'/></td>
+            <td><CalcButtons char='5'/></td>
+            <td><CalcButtons char='6'/></td>
+            <td><CalcButtons char='*'/></td>
           </tr>
           <tr>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='1'/></td>
+            <td><CalcButtons char='2'/></td>
+            <td><CalcButtons char='3'/></td>
+            <td><CalcButtons char='-'/></td>
           </tr>
           <tr>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
-            <td><CalcButtons char='7'/></td>
+            <td><CalcButtons char='CLR'/></td>
+            <td><CalcButtons char='DEL'/></td>
+            <td><CalcButtons char='0'/></td>
+            <td><CalcButtons char='+'/></td>
           </tr>
         </table>
       </div>
